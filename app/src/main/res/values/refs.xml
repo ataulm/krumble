@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--TODO: download a picture of a peanut cookie :D-->
+    <drawable name="peanut_cookie">@drawable/ic_launcher_foreground</drawable>
+</resources>
