@@ -10,8 +10,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        cookieImageView.setImageResource(R.drawable.peanut_cookie)
-        nameTextView.text = "Mr Peanut"
-        storyTextView.text = "Love taking long walks on the beach."
+        val cookie = Cookie("Mr Peanut", R.drawable.peanut_cookie, "Love taking long walks on the beach.")
+
+        cookieImageView.setImageResource(cookie.image)
+        nameTextView.text = cookie.name
+        storyTextView.text = cookie.story
     }
+
+    data class Cookie(val name: String, val image:Int, val story: String)
 }
